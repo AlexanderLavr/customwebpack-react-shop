@@ -1,0 +1,36 @@
+@import './share//mixins.scss';
+@import './share/color.scss';
+
+
+.cartContainer {
+    width: fit-content;
+    margin: 10% auto 0;
+    h2 {
+        color: $ERROR;
+    }
+}
+
+.cartRowContainer {
+    margin-bottom: 20px;
+    @include row-flex-center;
+    .cartRowImage {
+        width: 150px;
+        height: 150px;
+        background-size: contain;
+    }
+    .cartRowInfo {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cartRowContainer {
+        flex-direction: column;
+    }
+    .cartRowImage {
+        margin: 20px 0;
+    }
+    .cartRowInfo {
+        margin: 20px 0 !important;
+    }
+}

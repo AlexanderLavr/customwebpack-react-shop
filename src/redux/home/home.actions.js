@@ -1,4 +1,4 @@
-import { request } from '../../shere/request';
+import { request } from '../../common/request';
 
 export const SAVE_PRODUCTS = 'SAVE_PRODUCTS';
 
@@ -11,5 +11,12 @@ export const getProducts = () => {
     return async (dispatch) => {
         const products = await request('/', 'GET')
         dispatch(saveProducts(products.data))
+    }
+}
+
+export const setFavorite = (id) => {
+    return async (dispatch) => {
+        await request(`/editFavorite/${id}`, 'PUT')
+        await dispatch(getProducts())
     }
 }

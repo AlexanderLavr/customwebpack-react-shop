@@ -1,0 +1,14 @@
+@import './share/color.scss';
+@import './share/mixins.scss';
+
+.spinnerContainer {
+    position: relative;
+    @include full-screen;
+    @include flex-center;
+    .spinnerContent {
+        @include absolute-center;
+        width: fit-content;
+        color: $PRIMARY;
+        font-size: 1.5rem;
+    }
+}

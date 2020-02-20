@@ -1,0 +1,11 @@
+@import './share/mixins.scss';
+@import './share/color.scss';
+
+.emptyContainer {
+    @include full-screen;
+    @include flex-center;
+    h1 {
+        width: fit-content;
+        color: $ERROR;
+    }
+}

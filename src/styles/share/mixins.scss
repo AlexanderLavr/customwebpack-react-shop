@@ -1,0 +1,22 @@
+@mixin full-screen {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin  absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin  row-flex-center {
+    display: flex;
+    align-items: center;
+}

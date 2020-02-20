@@ -1,0 +1,36 @@
+.homeContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardContainer {
+    width: 20%;
+    .cardTitle {
+        height: 70px;
+    }
+    .cardDescription {
+        height: 110px;
+    }
+}
+
+@media (max-width: 1300px){
+    .cardContainer {
+        width: 25%;
+    }
+}
+@media (max-width: 1000px){
+    .cardContainer {
+        width: 32.33%;
+    }
+}
+@media (max-width: 700px){
+    .cardContainer {
+        width: 50%;
+    }
+}
+@media (max-width: 500px){
+    .cardContainer {
+        width: 100%;
+    }
+}

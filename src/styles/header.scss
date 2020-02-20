@@ -1,0 +1,27 @@
+@import './share/color.scss';
+
+// -------------------------------Draver
+.MuiButtonBase-root {
+    margin-bottom: 5px !important;
+}
+
+.checkTypeProduct {
+    background: $PRIMARY !important;
+    color: $WHITE !important;
+}
+.drawerSwich {
+    margin-top: 20px;
+    margin-left: 20px !important;
+}
+// -------------------------------Draver
+
+.cartLink { 
+    color: $WHITE;
+}
+.mainLink {
+    color: $WHITE;
+    text-decoration: none;
+}
+.cartBage {
+    right: -10px !important;
+}
